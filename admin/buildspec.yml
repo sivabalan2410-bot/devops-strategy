@@ -4,15 +4,6 @@ env:
   variables:
     LAMBDA_NAME: "lambda1"  # Change this if needed
 
-phases:
-  install:
-    runtime-versions:
-      python: 3.9  # Ensure this matches your Lambda runtime
-    commands:
-      - echo "Installing dependencies..."
-      - cd admin/lambda1
-      - pip install -r requirements.txt -t .
-
   build:
     commands:
       - echo "Zipping function..."
